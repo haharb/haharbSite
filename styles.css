@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.tab {
+    display: none;
+}
+.tab-header {
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+}
+.tab-header div {
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.tab-header div:hover {
+    background-color: #ddd;
+    transform: scale(1.1); /* Make the tab pop up */
+}
+.tab-header .active {
+    background-color: white;
+    border-bottom: 1px solid white;
+}
+.tab-content {
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
