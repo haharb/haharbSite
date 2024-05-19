@@ -1,28 +1,24 @@
-function openTab(evt, tabName) {
-    var i, tab, tabLinks;
-    tab = document.getElementsByClassName("tab");
-    for (i = 0; i < tab.length; i++) {
-        tab[i].style.display = "none";
-    }
-    tabLinks = document.getElementsByClassName("tab-link");
-    for (i = 0; i < tabLinks.length; i++) {
-        tabLinks[i].className = tabLinks[i].className.replace(" active", "");
-    }
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-    window.location.hash = tabName;
+
+function loadPage(page) {
+    
+    fetch(page)
+        .then(response => response.text())
+        .then(data => {
+            console.log(document.getElementById('content'));
+            document.getElementById('content').innerHTML = data;
+            console.log(data);
+        })
+        .catch(error => console.error('Error loading page:', error));
+        
 }
 
-function openTabByHash() {
-    var hash = window.location.hash.substring(1);
-    if (hash) {
-        var tabLink = document.querySelector('.tab-link[onclick*="' + hash + '"]');
-        if (tabLink) {
-            tabLink.click();
-        }
-    } else {
-        document.getElementsByClassName('tab-link')[0].click();
-    }
+function loadHeader() {
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
 }
 
-window.onload = openTabByHash;
+loadHeader();
