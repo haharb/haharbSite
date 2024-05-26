@@ -12,8 +12,8 @@ function Home() {
       <title>HaHarb</title>
     </head>
       <div className="tab-content">
-        <h2>Welcome to my personal website</h2>
-        <p>Please explore the different tabs</p>
+        <h2>Hello World</h2>
+        <p>Feel free to explore the different tabs</p>
         <p>Details about my projects...</p>
       </div>
       
