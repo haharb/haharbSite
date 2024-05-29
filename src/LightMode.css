@@ -1,0 +1,28 @@
+/* Light mode styles */
+body.light-mode {
+    background-color: #FFF;
+    color: #000;
+  }
+  
+  body.light-mode a {
+    color: #0000EE;
+  }
+  
+  body.light-mode .tab-header {
+    background-color: #EEE;
+    border-color: #000;
+  }
+  
+  body.light-mode .tab-header a {
+    background-color: #EEE;
+    border-color: #000;
+  }
+  
+  body.light-mode .tab-header a:hover {
+    background-color: #DDD;
+  }
+  
+  body.light-mode .tab-content {
+    background-color: #FFF;
+    border: 1px solid #000;
+  }

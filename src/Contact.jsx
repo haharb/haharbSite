@@ -1,4 +1,9 @@
 import './App.css';
+import './Header.css';
+import './Footer.css';
+import './DarkMode.css';
+import './LightMode.css';
+import './SideMenu.css';
 import Header from './Header';
 
 function Contact() {

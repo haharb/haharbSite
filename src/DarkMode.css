@@ -1,0 +1,29 @@
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333;
+    color: #00FF00;
+  }
+  
+  body.dark-mode a {
+    color: #00FF00;
+  }
+  
+  body.dark-mode .tab-header {
+    background-color: #333;
+    border-color: #00FF00;
+  }
+  
+  body.dark-mode .tab-header a {
+    background-color: #333;
+    border-color: #00FF00;
+  }
+  
+  body.dark-mode .tab-header a:hover {
+    background-color: #444;
+  }
+  
+  body.dark-mode .tab-content {
+    background-color: #333;
+    border: 1px solid #00FF00;
+    color: #00FF00;
+  }

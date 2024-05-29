@@ -1,0 +1,11 @@
+/* Header */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--header-bg-color);
+    border-bottom: 1px solid var(--header-border-color);
+    transition: background-color 0.3s, border-color 0.3s;
+  }
