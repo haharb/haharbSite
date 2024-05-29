@@ -43,5 +43,21 @@
     color: #007bff;
   }
   
- 
+  @media (max-width: 768px) {
+    .side-menu {
+      width: 100%;
+      position: relative;
+      top: 0;
+      height: auto;
+      box-shadow: none;
+    }
   
+    .main-content {
+      flex-direction: column;
+      margin-left: 0;
+    }
+  
+    .content {
+      padding: 10px;
+    }
+}
