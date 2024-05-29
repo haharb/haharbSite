@@ -55,17 +55,21 @@ a:hover {
   transition: background-color 0.3s, border-color 0.3s;
 }
 
- /* Main Content */
- .main-content {
+.main-content {
   flex: 1;
   margin-left: 200px;
-  margin-top: 0px; 
+  margin-top: 60px;
   padding: 20px;
+  transition: margin-left 0.3s ease;
 }
 
+.side-menu.collapsed + .main-content {
+  margin-left: 80px; /* Adjusted margin for collapsed state */
+}
 .content {
   flex: 1;
   background-color: #f0f0f0;
   color: #333;
   transition: background-color 0.3s, color 0.3s;
 }
+

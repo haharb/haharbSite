@@ -11,6 +11,7 @@ body.light-mode {
   body.light-mode .tab-header {
     background-color: #EEE;
     border-color: #000;
+    border: 1px solid #00FF00;
   }
   
   body.light-mode .tab-header a {
