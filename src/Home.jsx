@@ -19,7 +19,7 @@ function Home() {
       <div className="tab-content">
         <h2>Hello World</h2>
         <p>Feel free to explore the different tabs
-          CURRENTLY UNDER CONTRUSTCTION
+          CURRENTLY UNDER CONSTRUCTION
         </p>
       </div>
       
