@@ -10,13 +10,12 @@ body.light-mode {
   
   body.light-mode .tab-header {
     background-color: #EEE;
-    border-color: #000;
-    border: 1px solid #00FF00;
+    border-color: #0000EE;
   }
   
   body.light-mode .tab-header a {
     background-color: #EEE;
-    border-color: #000;
+    border-color: #0000EE;
   }
   
   body.light-mode .tab-header a:hover {
@@ -25,5 +24,7 @@ body.light-mode {
   
   body.light-mode .tab-content {
     background-color: #FFF;
-    border: 1px solid #000;
+    border: 1px solid #0000EE;
+    color: #000;
   }
+  

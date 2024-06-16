@@ -23,6 +23,30 @@ a:hover {
   min-height: 100vh;
 }
 
+/*
+.section-header {
+  cursor: pointer;
+}
+*/
+
+.boxed-header {
+  border: 2px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+.boxed-header h2 {
+  margin: 0; 
+}
+
+
 .wrapper {
   display: flex;
   flex-grow: 1;
@@ -58,13 +82,13 @@ a:hover {
 .main-content {
   flex: 1;
   margin-left: 200px;
-  margin-top: 60px;
-  padding: 20px;
+  margin-top: 0px;
+  padding: 0px;
   transition: margin-left 0.3s ease;
 }
 
 .side-menu.collapsed + .main-content {
-  margin-left: 80px; /* Adjusted margin for collapsed state */
+  margin-left: 80px;
 }
 .content {
   flex: 1;
@@ -73,3 +97,14 @@ a:hover {
   transition: background-color 0.3s, color 0.3s;
 }
 
+/* Images */
+.image-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.image-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}

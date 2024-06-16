@@ -18,8 +18,9 @@ function Home() {
     </head>
       <div className="tab-content">
         <h2>Hello World</h2>
-        <p>Feel free to explore the different tabs</p>
-        <p>Details about my projects...</p>
+        <p>Feel free to explore the different tabs
+          CURRENTLY UNDER CONTRUSTCTION
+        </p>
       </div>
       
   </html>

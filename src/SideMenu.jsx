@@ -3,11 +3,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import './SideMenu.css';
 
-function SideMenu({ headers }) {
+function SideMenu({ headers, scrollToSection, sdrRef, tdsRef, activeSection }) {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   const toggleMenu = () => {
     setIsCollapsed(!isCollapsed);
+  };
+
+  const handleScrollToSection = (id) => {
+    if (id === 'sdr') {
+      scrollToSection(sdrRef, id);
+    } else if (id === 'tds') {
+      scrollToSection(tdsRef, id);
+    } else {
+      console.warn(`No section found for id: ${id}`);
+    }
   };
 
   return (
@@ -19,7 +29,12 @@ function SideMenu({ headers }) {
       <ul>
         {headers.map(header => (
           <li key={header.id}>
-            <a href={`#${header.id}`}>{header.text}</a>
+            <button 
+              onClick={() => handleScrollToSection(header.id)}
+              className={activeSection === header.id ? 'active' : ''}
+            >
+              {header.text}
+            </button>
           </li>
         ))}
       </ul>
