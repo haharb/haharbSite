@@ -4,7 +4,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 function ModeSwitch() {
   // Retrieve the saved theme mode from localStorage, default to 'dark' if not set
-  const savedTheme = localStorage.getItem('themeMode') || 'dark';
+  const savedTheme = localStorage.getItem('themeMode') || 'light';
   const [isLightMode, setIsLightMode] = useState(savedTheme === 'light');
 
   const toggleMode = () => {

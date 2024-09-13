@@ -23,6 +23,11 @@ import tds5 from './photos/TDSV2 5.PNG';
 import tds6 from './photos/TDSV2 6.PNG';
 import tds7 from './photos/TDSV2 7.PNG';
 
+
+import qasop1 from './photos/QASOP.PNG';
+import qasop2 from './photos/QASOP2.PNG';
+import qasop3 from './photos/QASOP 3.PNG';
+
 import ImageContainer from './ImageContainer';
 
 function Projects() {
@@ -30,16 +35,19 @@ function Projects() {
     { id: 'sdr', text: 'SDR' },
     { id: 'tds', text: 'TDSV2' },
     { id: 'qasop', text: 'QASOP' },
-    { id: 'esr', text: 'ESR' }
   ];
 
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [isSDRSectionCollapsed, setSDRSectionCollapsed] = useState(false);
   const [isTDSSectionCollapsed, setTDSSectionCollapsed] = useState(false);
+  const [isQASOPSectionCollapsed, setQASOPSectionCollapsed] = useState(false);
+
   const [activeSection, setActiveSection] = useState('sdr');
 
   const sdrRef = useRef(null);
   const tdsRef = useRef(null);
+  const qasopRef = useRef(null);
+
 
   const toggleMenu = () => {
     setIsCollapsed(!isCollapsed);
@@ -51,6 +59,10 @@ function Projects() {
 
   const toggleTDSSection = () => {
     setTDSSectionCollapsed(!isTDSSectionCollapsed);
+  };
+
+  const toggleQASOPSection = () => {
+    setQASOPSectionCollapsed(!isQASOPSectionCollapsed);
   };
 
   const scrollToSection = (sectionRef, id) => {
@@ -69,12 +81,13 @@ function Projects() {
         scrollToSection={scrollToSection}
         sdrRef={sdrRef}
         tdsRef={tdsRef}
+        qasopRef={qasopRef}
         activeSection={activeSection} 
       />
       <div className={`tab-content ${isCollapsed ? 'collapsed' : ''}`}>
         <div className="section" ref={sdrRef}>
           <h2 className="boxed-header section-header" onClick={toggleSDRSection}>
-            SDR: Scuba Dive Log Record Keeping {isSDRSectionCollapsed ? '▲' : '▼'}
+            SDR: Scuba Dive Log Record (Keeping) {isSDRSectionCollapsed ? '▲' : '▼'}
           </h2>
           {!isSDRSectionCollapsed && (
             <>
@@ -96,7 +109,7 @@ function Projects() {
 
         <div className="section" ref={tdsRef}>
           <h2 className="boxed-header section-header" onClick={toggleTDSSection}>
-            TDSV2: Total Dissolved Solids Version 2 {isTDSSectionCollapsed ? '▲' : '▼'}
+          TDSV2: Total Dissolved Solids Version 2  {isTDSSectionCollapsed ? '▲' : '▼'}
           </h2>
           {!isTDSSectionCollapsed && (
             <>
@@ -112,6 +125,24 @@ function Projects() {
               <ImageContainer src={tds4} alt="TDSV2 application"></ImageContainer>
               <ImageContainer src={tds5} alt="TDSV2 application"></ImageContainer>
               <ImageContainer src={tds7} alt="TDSV2 application"></ImageContainer>
+            </>
+          )}
+        </div>
+        <div className="section" ref={qasopRef}>
+          <h2 className="boxed-header section-header" onClick={toggleQASOPSection}>
+          QASOP: Quality Assurance Standard Operating Procedures (Manager) {isQASOPSectionCollapsed ? '▲' : '▼'}
+          </h2>
+          {!isQASOPSectionCollapsed && (
+            <>
+              <h3>About</h3>
+              <p>This application was created to help the QA team query data from Microsoft SharePoint and make comparisons.
+                The purpose is to track and compare editable and final versions of Standard Operating Procedures, and ensure consistency.</p>
+              <h3>Tech</h3>
+              <p>Developed under the .NET 6 framework, written in C# under the MVC (Model-View-Controller) architecture, and in Visual Studio as a WPF project. Connected to a Oracle 19c database. </p>
+              <ImageContainer src={qasop1} alt="QASOP application"></ImageContainer>
+              <ImageContainer src={qasop2} alt="QASOP application"></ImageContainer>
+              <ImageContainer src={qasop3} alt="QASOP application"></ImageContainer>
+              
             </>
           )}
         </div>
