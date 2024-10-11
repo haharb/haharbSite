@@ -7,26 +7,18 @@ import './LightMode.css';
 import './SideMenu.css';
 import SideMenu from './SideMenu';
 
-import sdr1 from './photos/SDR 1.PNG';
-import sdr2 from './photos/SDR 2.PNG';
-import sdr3 from './photos/SDR 3.PNG';
-import sdr4 from './photos/SDR 4.PNG';
-import sdr5 from './photos/SDR 5.PNG';
-import sdr6 from './photos/SDR 6.PNG';
-import sdr7 from './photos/SDR 7.PNG';
+import sdr1 from './photos/SDR 1.png';
+import sdr2 from './photos/SDR 2.png';
+import sdr3 from './photos/SDR 3.png';
+import sdr4 from './photos/SDR 4.png';
 
-import tds1 from './photos/TDSV2 1.PNG';
-import tds2 from './photos/TDSV2 2.PNG';
-import tds3 from './photos/TDSV2 3.PNG';
-import tds4 from './photos/TDSV2 4.PNG';
-import tds5 from './photos/TDSV2 5.PNG';
-import tds6 from './photos/TDSV2 6.PNG';
-import tds7 from './photos/TDSV2 7.PNG';
+import tds1 from './photos/TDSV2 1.png';
+import tds6 from './photos/TDSV2 6.png';
 
 
-import qasop1 from './photos/QASOP.PNG';
-import qasop2 from './photos/QASOP2.PNG';
-import qasop3 from './photos/QASOP 3.PNG';
+import qasop1 from './photos/QASOP.png';
+import qasop2 from './photos/QASOP2.png';
+import qasop3 from './photos/QASOP 3.png';
 
 import ImageContainer from './ImageContainer';
 
@@ -95,14 +87,11 @@ function Projects() {
               <p>The application was developed for the Reservoir Management team's SCUBA diving team to
                 log and track dives for OSHA purposes. </p>
               <h3>Tech</h3>
-              <p>Developed under the .NET 6 framework, written in C#, under the MVVM (Model-View-ViewModel) architecture, and in Visual Studio as a WPF project. Connected to a Oracle 19c database. </p>
+              <p>Developed with .NET 6 C#, under the MVVM (Model-View-ViewModel) architecture, and in Visual Studio as a WPF project. Connected to a Oracle 19c database. </p>
               <ImageContainer src={sdr1} alt="SDR application"></ImageContainer>
               <ImageContainer src={sdr2} alt="SDR application"></ImageContainer>
               <ImageContainer src={sdr3} alt="SDR application"></ImageContainer>
               <ImageContainer src={sdr4} alt="SDR application"></ImageContainer>
-              <ImageContainer src={sdr5} alt="SDR application"></ImageContainer>
-              <ImageContainer src={sdr6} alt="SDR application"></ImageContainer>
-              <ImageContainer src={sdr7} alt="SDR application"></ImageContainer>
             </>
           )}
         </div>
@@ -117,14 +106,9 @@ function Projects() {
               <p>The application was a remake to migrate to a newer technology and modernize the original.
                 The purpose is to track analytes and their data value, save to a separate database, for the most recent data to be viewed and compared.</p>
               <h3>Tech</h3>
-              <p>Developed under the .NET 6 framework, written in C# under the MVC (Model-View-Controller) architecture, and in Visual Studio as a WPF project. Connected to a Oracle 19c database. </p>
+              <p>Developed with .NET 6 C#, under the MVC (Model-View-Controller) architecture, and in Visual Studio as a WPF project. Connected to a Oracle 19c database. </p>
               <ImageContainer src={tds1} alt="TDSV2 application" subtitle="Hello"></ImageContainer>
               <ImageContainer src={tds6} alt="TDSV2 application"></ImageContainer>
-              <ImageContainer src={tds2} alt="TDSV2 application"></ImageContainer>
-              <ImageContainer src={tds3} alt="TDSV2 application"></ImageContainer>
-              <ImageContainer src={tds4} alt="TDSV2 application"></ImageContainer>
-              <ImageContainer src={tds5} alt="TDSV2 application"></ImageContainer>
-              <ImageContainer src={tds7} alt="TDSV2 application"></ImageContainer>
             </>
           )}
         </div>
@@ -138,7 +122,7 @@ function Projects() {
               <p>This application was created to help the QA team query data from Microsoft SharePoint and make comparisons.
                 The purpose is to track and compare editable and final versions of Standard Operating Procedures, and ensure consistency.</p>
               <h3>Tech</h3>
-              <p>Developed under the .NET 6 framework, written in C# under the MVC (Model-View-Controller) architecture, and in Visual Studio as a WPF project. Connected to a Oracle 19c database. </p>
+              <p>Developed with .NET 6 C#, under the MVC (Model-View-Controller) architecture, and in Visual Studio as a WPF project. Connected to a Oracle 19c database. </p>
               <ImageContainer src={qasop1} alt="QASOP application"></ImageContainer>
               <ImageContainer src={qasop2} alt="QASOP application"></ImageContainer>
               <ImageContainer src={qasop3} alt="QASOP application"></ImageContainer>
