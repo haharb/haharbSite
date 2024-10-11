@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.769ffe72.css",
-    "main.js": "/static/js/main.efa6a394.js",
+    "main.js": "/static/js/main.03dd798e.js",
     "static/js/453.2f4c9f4b.chunk.js": "/static/js/453.2f4c9f4b.chunk.js",
     "static/media/SDR 1.png": "/static/media/SDR 1.c541fb11c19c3270ffd8.png",
     "static/media/SDR 3.png": "/static/media/SDR 3.7724dc8aad11e4093af0.png",
     "static/media/TDSV2 6.png": "/static/media/TDSV2 6.1d6d23e1fe897a4e11bc.png",
     "static/media/TDSV2 1.png": "/static/media/TDSV2 1.6a83ae98b0cab5c135e6.png",
-    "static/media/QASOP 3.png": "/static/media/QASOP 3.fe31aa601ef23981187a.png",
+    "static/media/QASOP 3.png": "/static/media/QASOP 3.f569ba03db28838d2817.png",
     "static/media/SDR 4.png": "/static/media/SDR 4.12c6c1e7b0d6518dad6c.png",
     "static/media/SDR 2.png": "/static/media/SDR 2.434cd7b76acc33e30990.png",
     "static/media/QASOP2.png": "/static/media/QASOP2.129a14c04af5b658dffa.png",
@@ -15,11 +15,11 @@
     "static/media/linkedIn_logo.png": "/static/media/linkedIn_logo.68ac41e1459436bfd38f.png",
     "index.html": "/index.html",
     "main.769ffe72.css.map": "/static/css/main.769ffe72.css.map",
-    "main.efa6a394.js.map": "/static/js/main.efa6a394.js.map",
+    "main.03dd798e.js.map": "/static/js/main.03dd798e.js.map",
     "453.2f4c9f4b.chunk.js.map": "/static/js/453.2f4c9f4b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.769ffe72.css",
-    "static/js/main.efa6a394.js"
+    "static/js/main.03dd798e.js"
   ]
 }
